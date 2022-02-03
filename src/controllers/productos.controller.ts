@@ -45,5 +45,5 @@ export async function updateProduct(req: Request, res: Response) {
   const updateProduct: ProductoInterface = req.body;
   const conn = await connect();
   await conn.query("UPDATE products SET ? WHERE id = ?", [updateProduct, id]);
-  return res.json({ message: "Producto Actualizado" });
+  return res.json({ message: "Producto Actualizado Correctamente" });
 }

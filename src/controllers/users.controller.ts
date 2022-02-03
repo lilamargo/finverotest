@@ -39,5 +39,7 @@ export async function updateUser(req: Request, res: Response) {
   const updateUser: UserInterface = req.body;
   const conn = await connect();
   await conn.query("UPDATE users SET ? WHERE id = ?", [updateUser, id]);
-  return res.json({ message: "Datos de Usuario Actualizados Correctamente" });
+  return res.json({
+    message: "Información de Usuario Actualizada Correctamente",
+  });
 }
