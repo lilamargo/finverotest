@@ -1,7 +1,7 @@
 import express, { Application } from "express";
 import morgan from "morgan";
 
-//Routes
+//Rutas
 import IndexRoutes from "./routes/index.routes";
 import ProductosRoutes from "./routes/productos.routes";
 import UserRoutes from "./routes/users.routes";
