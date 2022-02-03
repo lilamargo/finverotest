@@ -4,6 +4,8 @@ import morgan from "morgan";
 //Routes
 import IndexRoutes from "./routes/index.routes";
 import ProductosRoutes from "./routes/productos.routes";
+import UserRoutes from "./routes/users.routes";
+import ShopRoutes from "./routes/shop.routes";
 
 export class App {
   private app: Application;
@@ -27,6 +29,8 @@ export class App {
   routes() {
     this.app.use(IndexRoutes);
     this.app.use("/productos", ProductosRoutes);
+    this.app.use("/users", UserRoutes);
+    this.app.use("/shop", ShopRoutes);
   }
 
   async listen() {
