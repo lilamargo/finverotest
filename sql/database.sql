@@ -1,0 +1,12 @@
+CREATE DATABASE finvero;
+
+CREATE TABLE products(
+    id INT(11) NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    title VARCHAR(200) NOT NULL,
+    description TEXT NOT NULL,
+    price NUMBER(20,2) NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+)
+
+DESCRIBE products;
+
